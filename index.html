@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>Color App</title>
+		<style>
+			*{
+				font-size:40px;
+				background-color:azure;
+			}
+		</style>
+		<script>
+			function color(){
+				event.preventDefault()
+				let color = ["pink","yellow","red","green"];
+				let r = parseInt(Math.random() * color.length);
+				document.body.style.background = color[r];
+			}
+		</script>
+	</head>
+	<body>
+		<center>
+			<h1>Color Me</h1>
+			<form onsubmit="color()">
+				<input type="submit" value="Change Color"/>
+			</form>
+			
+		</center>
+	</body>
+</html>
+
